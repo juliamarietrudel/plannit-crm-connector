@@ -12,6 +12,8 @@ app.get("/", (req, res) => {
 app.post("/webhook/lead", async (req, res) => {
   try {
     const lead = req.body;
+    console.log("BODY COMPLET:");
+    console.log(JSON.stringify(lead, null, 2));
 
     console.log("Lead reçu:", lead);
 
