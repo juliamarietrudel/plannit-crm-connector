@@ -33,7 +33,7 @@ Nouveau lead reçu
 Nom: ${lead.firstName || lead.first_name || ""} ${lead.lastName || lead.last_name || ""}
 Email: ${lead.email || ""}
 Téléphone: ${lead.phone || lead.phoneNumber || lead.phone_number || ""}
-Service demandé: ${lead.service || lead.serviceName || lead.service_name || ""}
+Service demandé: ${lead.service || lead.serviceName || lead.service_name || lead.customData?.service || ""}
 Message: ${lead.message || lead.description || ""}
         `.trim()
       }
